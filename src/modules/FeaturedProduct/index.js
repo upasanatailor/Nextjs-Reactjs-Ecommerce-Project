@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./FeaturedProduct.module.css";
-import FeaturedProductData from "../../component/FeaturedProductdata";
+import FeaturedProductData from "../../component/FeaturedProductData";
 import axios from "axios";
 
 const FeaturedProduct = () => {
