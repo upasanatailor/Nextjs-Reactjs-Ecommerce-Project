@@ -1,0 +1,18 @@
+.container {
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.productdata {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-color: aliceblue;
+}

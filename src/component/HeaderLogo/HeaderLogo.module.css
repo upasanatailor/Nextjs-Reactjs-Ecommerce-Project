@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+
+.text {
+  font-size: 16px;
+}

@@ -1,0 +1,21 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #f2f2f2;
+  color: black;
+  width: 200px;
+  height: 40px;
+  margin: 8px;
+  padding: 8px;
+}
+.icon {
+  height: 30px;
+  width: 40px;
+  margin-left: 10px;
+}
+.heading {
+  margin: 0px;
+}

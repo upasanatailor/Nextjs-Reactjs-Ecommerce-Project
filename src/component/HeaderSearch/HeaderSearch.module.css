@@ -1,0 +1,12 @@
+.search {
+  border-radius: 99px;
+  background: #ededf0;
+  width: 280px;
+}
+.tag {
+  text-decoration: none;
+  color: #2264d1;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 14px;
+}

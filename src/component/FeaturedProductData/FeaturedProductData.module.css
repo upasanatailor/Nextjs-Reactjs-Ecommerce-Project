@@ -1,0 +1,46 @@
+.container {
+  width: 181px;
+  height: 329px;
+  margin: 18px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo {
+  width: 255px;
+  height: 477px;
+
+  text-align: center;
+}
+.star {
+  width: 20px;
+  height: 20px;
+}
+.productpara {
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 30px;
+}
+.bottomitem {
+  display: flex;
+}
+.numtext {
+  font-weight: 500;
+  font-size: 14px;
+}
+.imagecontainer {
+  justify-content: center;
+  display: flex;
+}
+.button {
+  font-style: normal;
+  color: white;
+  border-color: #f3f3f3f0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  background: #d80000;
+  margin-right: 10px;
+  width: 100%;
+  height: 48px;
+}
