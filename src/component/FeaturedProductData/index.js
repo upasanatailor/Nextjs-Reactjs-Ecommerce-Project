@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./FeaturedProductData.module.css";
-import logo from "../../../public/Images/river.jpg";
 import Image from "next/image";
-import star from "../../../public/Images/star.jpg";
-import { relative } from "path";
 
 const FeaturedProductData = (props) => {
   const {

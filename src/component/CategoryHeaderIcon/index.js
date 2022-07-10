@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./CategoryHeadericon.module.css";
+import styles from "./CategoryHeaderIcon.module.css";
 
 const CategoryHeaderIcon = (props) => {
   const { value } = props;
