@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import styles from "./FeaturedProduct.module.css";
 import FeaturedProductData from "../../component/FeaturedProductData";
 import axios from "axios";
+import Modal from "react-modal";
+import PaymentModel from "../../component/PaymentModel";
 
 const FeaturedProduct = () => {
   const [products, setProducts] = useState(null);
+  const [isModelOpen, setIsModelOpen] = useState(false);
+  const [singleProductDataValues, setSingleProductDataValues] = useState(null);
+
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
@@ -19,11 +24,28 @@ const FeaturedProduct = () => {
       });
   }, []);
 
+  const handleOpenModel = (singleProductData) => {
+    setSingleProductDataValues(singleProductData);
+    setIsModelOpen(true);
+  };
+
   return (
     <div className={styles.container}>
+      <Modal isOpen={isModelOpen} contentLabel="Payment Proceed">
+        <PaymentModel
+          setIsModelOpen={setIsModelOpen}
+          singleProductDataValues={singleProductDataValues}
+        />
+      </Modal>
+
       {products &&
         products.map((value) => {
-          return <FeaturedProductData value={value} />;
+          return (
+            <FeaturedProductData
+              handleOpenModel={handleOpenModel}
+              value={value}
+            />
+          );
         })}
     </div>
   );

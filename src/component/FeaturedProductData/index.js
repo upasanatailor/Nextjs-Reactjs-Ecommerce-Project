@@ -4,9 +4,10 @@ import Image from "next/image";
 
 const FeaturedProductData = (props) => {
   const {
+    handleOpenModel,
     value: { category, image, price, title },
   } = props;
-  console.log(props);
+
   return (
     <div className={styles.container}>
       <div className={styles.imagecontainer}>
@@ -23,7 +24,12 @@ const FeaturedProductData = (props) => {
       <h2 className={styles.numtext}>${price}</h2>
       <p className={styles.productpara}>{category}</p>
       <div className={styles.bottomitem}>
-        <button className={styles.button}>Pay Now</button>
+        <button
+          onClick={() => handleOpenModel(props?.value)}
+          className={styles.button}
+        >
+          Pay Now
+        </button>
       </div>
     </div>
   );

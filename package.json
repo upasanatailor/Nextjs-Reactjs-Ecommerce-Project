@@ -10,7 +10,8 @@
     "lodash": "^4.17.21",
     "next": "12",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-modal": "^3.15.1"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
